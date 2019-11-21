@@ -1,0 +1,61 @@
+Q1:
+print("Marksheet")
+English= int(input("Enter your marks of English out of 100 = "))
+Urdu= int(input("Enter your marks of Urdu out of 100 = "))
+Mathematics= int(input("Enter your marks of Mathematics out of 100 = "))
+Chemistry= int(input("Enter your marks of Chemistry out of 75 = "))
+Physics= int(input("Enter your marks of Physics out of 75 = "))
+
+Total_marks= English+Urdu+Mathematics+Chemistry+Physics
+Percentage= (Total_marks/450)*100
+print("Your Total Marks are " + str(Total_marks))
+print("Your Percentage is" + " " + str(Percentage))
+if Percentage >= 80:
+ print("Congratulations! You have secured Grade A+")
+elif Percentage >=70 and Percentage <100:
+ print("Congratulations! You have secured Grade A")
+elif Percentage >=60 and Percentage <70:
+ print("Congratulations You have secured Grade B")
+elif Percentage >=0 and Percentage <60:
+ print("You've failed in examination")
+else:
+ print("You've give inappropriate %")
+
+Q2:
+number = int(input("Enter your number = "))
+check_point = num%2
+if check_point == 0:
+  print(number, "is an even number")
+elif check_point == 1:
+  print(number, "is an odd number")
+
+Q3:
+list1=[]
+n=int(input('Enter the size of the list : '))
+print('Enter ',n,'numbers...')
+for i in range(n):
+    list1.append(int(input()))
+    x=int(input('Enter limit : '))
+    print('list : ',list1)
+
+Q4:
+NumList = []
+Number = int(input("Please enter the Total Number of List Elements: "))
+for i in range(1, Number + 1):
+    value = int(input("Please enter the Value of %d Element : " %i))
+    NumList.append(value)
+
+print("The Smallest Element in this List is : ", min(NumList))
+print("The Largest Element in this List is : ", max(NumList))
+
+Q5:
+NumList = []
+
+Number = int(input("Please enter the Total Number of List Elements : "))
+for i in range(1, Number + 1):
+    value = int(input("Please enter the Value of %d Element : " %i))
+    NumList.append(value)
+
+total = sum(NumList)
+
+print("\n The Sum of All Element in this List is : ", total)
